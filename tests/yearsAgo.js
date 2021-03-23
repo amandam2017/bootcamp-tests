@@ -1,4 +1,4 @@
-describe('this test', function(){
+describe('this test a yearsAgo function', function(){
     it('calculates years difference between 2000 and 1976 and returns the difference', function(){
         assert.equal(2000, yearsAgo(21));
     })

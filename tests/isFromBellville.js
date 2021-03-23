@@ -5,7 +5,7 @@ describe('this test isFromBellville', function(){
     it('should find if are they any cars from Bellville and return true if theres any', function(){
          assert.equal(false, isFromBellville('CJ 45875'));
     });
-    it('should wrong identity supposed to use car registration', function(){
+    it('check if there are any cars from other reg numbers', function(){
         //The below is false because I have named the place instead of using its registration number to identify
         assert.equal(false, isFromBellville('CK 8765'));
    });
