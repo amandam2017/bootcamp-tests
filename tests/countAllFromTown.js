@@ -6,14 +6,14 @@ describe('this test countAllFromTown', function(){
     });
 
     it('finding out if is there any other cars from fromKraaifontein, should count them and return the total', function(){
-        var fromStellies = countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CF');
+        var fromKraaifontein = countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CF');
         assert.equal(countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CF'), 0);
     });
 
     it('find if there are any cars from Paarl, should count and return total of  cars from CJ ', function(){
-        var fromStellies = countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CJ');
+        var fromPaarl = countAllFromTown('CL 124,CY 567,CL 345, CJ 456,CL 341','CJ');
         //fromStellies should contains
-        assert.deepEqual(fromStellies, 1)
+        assert.deepEqual(fromPaarl, 1)
     })
 })
 
