@@ -1,6 +1,4 @@
-function displayEachRegNumber(regList){
-    for (var i=0; i<regList.length; i++){
-      console.log(regList[i]);
-    
-    }
-  }
+function countRegNumber(carReg){
+  var regCount = carReg.split(',');
+  return regCount.length;
+};
