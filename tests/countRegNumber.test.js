@@ -1,15 +1,19 @@
-describe('this function  returns the number of registration numbers in the string', function(){
-    it('this should return 3 which is the total regNumbers CA 182736,CY 523519,CJ 812328', function(){
+describe('this test countRegNumber function,', function(){
+    it('should return the total number of the registration numbers found', function(){
 
-       // var regCount = countRegNumber('CA 182736,CY 523519,CJ 812328')
-        assert.equal(3, countRegNumber('CA 182736,CY 523519,CJ 812328'))
+        var regCount = countRegNumber('CA 182736,CY 523519,CJ 812328')
+        assert.equal(3, regCount)
     });
 
-    it('this should return 2 which is the total of regNumbers inside this function', function(){
+    it('should return the total number of the registration numbers found', function(){
         assert.equal(2, countRegNumber('CA 42665, AA 12 RT GP'));
     });
-    it('this should return 5 which is the total of regNumbers inside this function', function(){
+    it('should return the total number of the registration numbers found', function(){
         assert.equal(5,countRegNumber('CA 42665, AA 12 RT GP, CA 182736,CY 523519,CJ 812328'));
+    })
+    it('should return the total number of the registration numbers found', function(){
+        var regCount = countRegNumber('CA 42665, AA 12 RT GP, CA 182736,CY 523519,CJ 812328')
+        assert.equal(5,regCount);
     })
 })
 

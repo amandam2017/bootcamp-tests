@@ -1,5 +1,5 @@
-describe('The from where function', function() {
-    it('should be able return bellvile for CY', function() {
+describe('this test fromWhere function', function() {
+    it('should return bellville for CY', function() {
         var reg = fromWhere('CY');
         assert.equal('Bellville', reg);
 
@@ -12,9 +12,9 @@ describe('The from where function', function() {
         var regThree = fromWhere('CA');
         assert.equal('Cape Town', regThree);
     });
-    it('should be able to return a default statement for some other place', function() {
-        var statement = fromWhere('ND');
-        assert.equal('Some other place!', statement); 
+    it('should return Some other place if a registration is from not in the specified place', function() {
+        var message = fromWhere('ND');
+        assert.equal('Some other place!', message); 
     });
 });
 

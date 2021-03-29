@@ -1,7 +1,7 @@
 var call = 2.75;
 var sms = 0.65;
 
-describe('this function calculates a totalPhoneBill', function(){
+describe('this test totalPhoneBill function,', function(){
     it('this should bring the total of sent smses', function(){
         assert.equal("R1.95" ,totalPhoneBill("sms, sms, sms"));
     });

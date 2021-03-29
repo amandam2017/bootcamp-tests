@@ -7,22 +7,22 @@
 //then I created an empty variable that I am goint to psh all the itemsOver 20
 //then push them there
 
-function findItemsOver20(itemList){
-	//console.log(itemList)
-  //going to push my list here
+function findItemsOver20(itemsList){
+	//console.log(objectList)
+  //going to push my over20 items here
   var itemsOver20 = [];
  //Looping through the list 
-  for(var i=0; i<itemList.length; i++){
+  for(var i=0; i<itemsList.length; i++){
  
     //find the items quantity on the list using dotnotation .qty and store them on listQuantities
-	var listQuantities = itemList[i];
-    //console.log(listQuantities)
-    
+	var listQuantities = itemsList[i];
+    //console.log(listQuantities)//returns the list with its qty
+    //looop over the list and check those that are more than 20
     if(listQuantities.qty >20){
-      console.log(listQuantities);
+      //console.log(listQuantities);
       itemsOver20.push(listQuantities);
       
-    };
+    }
 	}
   return itemsOver20;
 }

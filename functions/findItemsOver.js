@@ -7,13 +7,14 @@
 //then I created an empty variable that I am goint to psh all the itemsOver 20
 //then push them there
 
-function findItemsOver(threshold){
+
+function findItemsOver(itemsList, threshold){
   console.log(threshold)
-  var itemsOver = []
+  var itemsOver = [];
  
-  for(var i = 0; i < threshold.length; i++){
-    var listItem = threshold[i];
-    if(listItem.qty > 20){
+  for(var i = 0; i < itemsList.length; i++){
+    var listItem = itemsList[i];
+    if(listItem.qty > threshold){
       itemsOver.push(listItem)
     }
   }
