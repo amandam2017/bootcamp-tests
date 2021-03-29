@@ -1,14 +1,14 @@
-describe('this test yearsAgo function,', function(){
-    it('calculates years difference between 2000 and 1976 and returns the difference', function(){
-        assert.equal(2000, yearsAgo(21));
+describe('yearsAgo function,', function(){
+    it('should return - diffyears is a has not yet passed or reached..therefore in this case should return -9', function(){
+        assert.equal(-9, yearsAgo(2030));
     })
 
-    it('should return 45 which is the diffYears if  ', function(){
+    it('should return 45 which is the diffYears between the current year and 1976', function(){
         assert.equal(45, yearsAgo(1976));
     })
 
-    var currentYear = [2000];
-    it('if yearsAgo is added with yearDiff should bring currentYear', function(){
-        assert.equal(currentYear, yearsAgo(21));
+    var currentYear = [2021];
+    it('should return 0 diff if we are in current year', function(){
+        assert.equal(0, yearsAgo(currentYear));
     })
 })

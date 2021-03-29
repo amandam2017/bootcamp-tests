@@ -17,7 +17,7 @@ describe('this function find Items that are Over from the itemList', function() 
     
     ];
     
-    it('should return threshold over 20', function() {
+    it('should return items over the threshold', function() {
         var threshold = 20;
         assert.deepEqual([{name : 'oranges', qty : 37},
         {name : 'mangos', qty : 27}], findItemsOver(itemList, threshold));
@@ -25,7 +25,7 @@ describe('this function find Items that are Over from the itemList', function() 
 
 
      
-    it('should return an empty array if there are not items over 20 ', function() {
+    it('should return an empty array if there are no items on the threshold', function() {
         var threshold = 20;
         assert.deepEqual([], findItemsOver(itemList2, threshold));
     })
